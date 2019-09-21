@@ -1,0 +1,44 @@
+body {
+    background: #252072;
+    height: 100vh;
+    overflow: hidden;
+}
+body:before, body:after {
+    content: "";
+    width: 140px;
+    height: 140px;
+    background: #ffffff4f;
+    display: flex;
+    transform: rotate(45deg);
+}
+body:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+h1, span {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #fff;
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.wrapper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.wrapper-video {
+    position: relative;
+    margin: 30px auto 0;
+    width: 320px;
+}
+video, canvas {
+    position: absolute;
+    border: 1px solid #f00;
+}

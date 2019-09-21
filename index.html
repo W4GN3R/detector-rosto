@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+    <title>Detecção de rosto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper-content">
+        <h1>Detecção de rosto</h1>
+        <span class="warning">Por favor ative a camera para fazer a detecção do rosto</span>
+        <div class="wrapper-video">
+            <video id="video" width="320px" height="240px" preload autoplay loop muted></video>
+            <canvas id="canvas" width="320px" height="240px"></canvas>
+        </div>
+    </div>
+
+    <script src="js/tracking-min.js"></script>
+    <script src="js/face-min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
